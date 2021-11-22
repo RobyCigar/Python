@@ -16,9 +16,7 @@ def swap(a: int, b: int) -> tuple[int, int]:
     >>> swap(67, 12)
     (12, 67)
     """
-    a ^= b
-    b ^= a
-    a ^= b
+    a, b = b, a
     return a, b
 
 
